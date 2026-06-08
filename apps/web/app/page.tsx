@@ -35,12 +35,12 @@ export default function HomePage() {
           BRAZUS Builder OS
         </Badge>
         <h1 className="max-w-3xl text-4xl font-bold tracking-tight sm:text-6xl">
-          L'usine intelligente qui génère vos plateformes digitales
+          L&apos;usine intelligente qui génère vos plateformes digitales
         </h1>
         <p className="max-w-2xl text-lg text-muted-foreground">
-          Décrivez le besoin de votre client. Notre équipe d'agents IA conçoit,
+          Décrivez le besoin de votre client. Notre équipe d&apos;agents IA conçoit,
           développe, teste et documente automatiquement le CRM, le dashboard ou
-          l'automatisation correspondant — prêt à déployer.
+          l&apos;automatisation correspondant — prêt à déployer.
         </p>
         <div className="flex gap-3">
           <Button size="lg" asChild>
@@ -64,6 +64,4 @@ export default function HomePage() {
           </Card>
         ))}
       </section>
-    </main>
-  );
-}
+    

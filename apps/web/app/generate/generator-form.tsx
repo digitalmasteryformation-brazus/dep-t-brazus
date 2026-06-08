@@ -87,7 +87,7 @@ export function GeneratorForm({ workspaceId, projectId }: GeneratorFormProps) {
         <CardHeader>
           <CardTitle>Décrivez votre besoin</CardTitle>
           <CardDescription>
-            Plus le brief est précis (secteur d'activité, fonctionnalités attendues, ton de marque),
+            Plus le brief est précis (secteur d&apos;activité, fonctionnalités attendues, ton de marque),
             meilleur sera le résultat généré par les agents IA.
           </CardDescription>
         </CardHeader>
@@ -164,5 +164,4 @@ export function GeneratorForm({ workspaceId, projectId }: GeneratorFormProps) {
         </CardContent>
       </Card>
     </div>
-  );
-}
+  
