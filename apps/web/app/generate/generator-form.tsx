@@ -164,4 +164,5 @@ export function GeneratorForm({ workspaceId, projectId }: GeneratorFormProps) {
         </CardContent>
       </Card>
     </div>
-  
+  );
+}
