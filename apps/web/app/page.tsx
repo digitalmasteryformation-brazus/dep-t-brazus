@@ -64,4 +64,6 @@ export default function HomePage() {
           </Card>
         ))}
       </section>
-    
+    </main>
+  );
+}
