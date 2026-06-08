@@ -27,15 +27,26 @@ const buttonVariants = cva(
       size: 'default',
     },
   }
-);
+  );
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {
-  /** Fusionne les props sur l'enfant unique au lieu de rendre un <button> (ex: <Button asChild><Link/></Button>) */
+VariantProps<typeof buttonVariants> {
   asChild?: boolean;
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, asChild = false, ...props }, ref) => {
-    const Comp = asChi
+    const Comp = asChild ? Slot : 'button';
+    return (
+      <Comp
+        className={cn(buttonVariants({ variant, size, className }))}
+        ref={ref}
+        {...props}
+        />
+      );
+  }
+  );
+Button.displayName = 'Button';
+
+export { Button, buttonVariants };
